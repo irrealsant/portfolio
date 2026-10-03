@@ -1,33 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | NFT Cards</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__brand">
+          <img src="images/logo.png" alt="Portfolio logo" class="header__logo" />
+          <span>Portfolio</span>
+        </a>
 
-  Equilibrium #3429
+        <button
+          class="header__toggle"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-  Our Equilibrium collection promotes balance and calm.
+        <nav class="header__nav" id="menu">
+          <a href="#" class="header__link">Explore</a>
+          <a href="#" class="header__link">Collections</a>
+          <a href="#" class="header__link">About</a>
+          <a href="#" class="header__btn">Connect Wallet</a>
+        </nav>
+      </div>
+    </header>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <main class="content">
+      <h1 class="content__title">Featured NFTs</h1>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+      <section class="card-list">
+        <article class="card animate__animated animate__fadeInUp">
+          <a href="#" class="card__image" aria-label="View Equilibrium #3429">
+            <img src="images/nft1.jpg" alt="Equilibrium #3429 NFT artwork" />
+            <span class="card__overlay">
+              <img src="images/icon-view.svg" alt="" />
+            </span>
+          </a>
+          <h2 class="card__title"><a href="#">Equilibrium #3429</a></h2>
+          <p class="card__text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="card__info">
+            <p class="card__price">
+              <img src="images/icon-ethereum.svg" alt="" />
+              0.041 ETH
+            </p>
+            <p class="card__time">
+              <img src="images/icon-clock.svg" alt="" />
+              3 days left
+            </p>
+          </div>
+          <hr class="card__line" />
+          <div class="card__author">
+            <img class="card__avatar" src="images/image-avatar.png" alt="Avatar of Jules Wyvern" />
+            <p>Creation of <a href="#">Jules Wyvern</a></p>
+          </div>
+        </article>
+
+        <article class="card animate__animated animate__fadeInUp">
+          <a href="#" class="card__image" aria-label="View Neon Prism #1208">
+            <img src="images/nft2.jpg" alt="Neon Prism #1208 NFT artwork" />
+            <span class="card__overlay">
+              <img src="images/icon-view.svg" alt="" />
+            </span>
+          </a>
+          <h2 class="card__title"><a href="#">Neon Prism #1208</a></h2>
+          <p class="card__text">
+            A glowing prism that bends light into new colors.
+          </p>
+          <div class="card__info">
+            <p class="card__price">
+              <img src="images/icon-ethereum.svg" alt="" />
+              0.085 ETH
+            </p>
+            <p class="card__time">
+              <img src="images/icon-clock.svg" alt="" />
+              5 days left
+            </p>
+          </div>
+          <hr class="card__line" />
+          <div class="card__author">
+            <img class="card__avatar" src="images/image-avatar.png" alt="Avatar of Nova Reyes" />
+            <p>Creation of <a href="#">Nova Reyes</a></p>
+          </div>
+        </article>
+
+        <article class="card animate__animated animate__fadeInUp">
+          <a href="#" class="card__image" aria-label="View Cyber Orb #0764">
+            <img src="images/nft3.jpg" alt="Cyber Orb #0764 NFT artwork" />
+            <span class="card__overlay">
+              <img src="images/icon-view.svg" alt="" />
+            </span>
+          </a>
+          <h2 class="card__title"><a href="#">Cyber Orb #0764</a></h2>
+          <p class="card__text">
+            An orb of living circuits from the Cyber collection.
+          </p>
+          <div class="card__info">
+            <p class="card__price">
+              <img src="images/icon-ethereum.svg" alt="" />
+              0.120 ETH
+            </p>
+            <p class="card__time">
+              <img src="images/icon-clock.svg" alt="" />
+              2 days left
+            </p>
+          </div>
+          <hr class="card__line" />
+          <div class="card__author">
+            <img class="card__avatar" src="images/image-avatar.png" alt="Avatar of Kai Moretti" />
+            <p>Creation of <a href="#">Kai Moretti</a></p>
+          </div>
+        </article>
+
+        <article class="card animate__animated animate__fadeInUp">
+          <a href="#" class="card__image" aria-label="View Void Crystal #2951">
+            <img src="images/nft4.jpg" alt="Void Crystal #2951 NFT artwork" />
+            <span class="card__overlay">
+              <img src="images/icon-view.svg" alt="" />
+            </span>
+          </a>
+          <h2 class="card__title"><a href="#">Void Crystal #2951</a></h2>
+          <p class="card__text">
+            A crystal born in the dark, shining with quiet energy.
+          </p>
+          <div class="card__info">
+            <p class="card__price">
+              <img src="images/icon-ethereum.svg" alt="" />
+              0.063 ETH
+            </p>
+            <p class="card__time">
+              <img src="images/icon-clock.svg" alt="" />
+              7 days left
+            </p>
+          </div>
+          <hr class="card__line" />
+          <div class="card__author">
+            <img class="card__avatar" src="images/image-avatar.png" alt="Avatar of Lia Okafor" />
+            <p>Creation of <a href="#">Lia Okafor</a></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      toggle.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("is-open");
+        toggle.classList.toggle("is-open", isOpen);
+        toggle.setAttribute("aria-expanded", isOpen);
+        toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+    </script>
+  </body>
 </html>
