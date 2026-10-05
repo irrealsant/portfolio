@@ -2,14 +2,6 @@
 
 Projeto do **Desafio Portfólio 1.0**, desenvolvido em três fases: um componente de card NFT, uma lista de cards com animações e um header com logo própria. As imagens e a logo foram geradas com inteligência artificial (Leonardo.ai).
 
-## Preview
-
-### Desktop
-![Versão desktop](images/readme/desktop.png)
-
-### Mobile
-![Versão mobile](images/readme/mobile.png)
-
 ## Fases do desafio
 
 - **Fase 1.0 – CardNFT:** card baseado no desafio [NFT preview card component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U), do Frontend Mentor, com efeito de hover e layout responsivo.
@@ -27,9 +19,9 @@ Projeto do **Desafio Portfólio 1.0**, desenvolvido em três fases: um component
 
 ## Tecnologias
 
-- HTML5
-- CSS3 (Grid, Flexbox e variáveis CSS)
-- JavaScript (menu mobile)
+- HTML
+- CSS
+- JavaScript 
 - [Animate.css](https://animate.style/)
 - [Leonardo.ai](https://app.leonardo.ai/) (imagens e logo)
 - Fonte [Outfit](https://fonts.google.com/specimen/Outfit)
@@ -43,12 +35,7 @@ Projeto do **Desafio Portfólio 1.0**, desenvolvido em três fases: um component
 
 ## Como rodar localmente
 
-```bash
-git clone https://github.com/irrealsant/portfolio.git
-cd portfolio
-```
-
-Depois, abra o arquivo `index.html` no navegador.
+clique aqui https://irrealsant.github.io/portfolio/
 
 ## Autor
 
